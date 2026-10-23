@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Active Section Spy
+    // Active Section Spy (only for in-page hash links)
     let currentSectionId = '';
     sections.forEach((section) => {
       const sectionTop = section.offsetTop - 120;
@@ -168,13 +168,46 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    if (currentSectionId) {
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          link.classList.toggle('active', href === `#${currentSectionId}`);
+        }
+      });
+    }
+  });
+
+  // Preserve & Highlight Current Page in Desktop & Mobile Nav
+  function highlightCurrentPageNav() {
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const isHomePage = currentPath === '' || currentPath === 'index.html';
+
     navLinks.forEach((link) => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
+      const href = link.getAttribute('href');
+      if (!href || href.startsWith('#')) return;
+      const linkPath = href.split('#')[0].split('/').pop();
+      if ((isHomePage && (linkPath === '' || linkPath === 'index.html')) || (linkPath && linkPath === currentPath)) {
         link.classList.add('active');
+      } else {
+        link.classList.remove('active');
       }
     });
-  });
+
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileLinks.forEach((link) => {
+      const href = link.getAttribute('href');
+      if (!href || href.startsWith('#')) return;
+      const linkPath = href.split('#')[0].split('/').pop();
+      if ((isHomePage && (linkPath === '' || linkPath === 'index.html')) || (linkPath && linkPath === currentPath)) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  highlightCurrentPageNav();
 
   /* -----------------------------------------------------------------
    * 4. DYNAMIC HERO TYPEWRITER
