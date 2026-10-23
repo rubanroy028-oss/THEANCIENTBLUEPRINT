@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompts for Every Part of Life ($5 E-Book) | Julie Taparia · The Ancient Blueprint</title>
+  <meta name="description" content="Get Julie Taparia's digital companion guide 'AI Prompts for Every Part of Life' ($5). Ready-to-use prompts for love, career, money, and timing in ChatGPT and Claude.">
+  <link rel="canonical" href="https://www.theancientblueprint.com/ebook.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="AI Prompts for Every Part of Life ($5 Guidebook) · The Ancient Blueprint">
+  <meta property="og:description" content="Ready-to-use prompts to ask AI about love, career, money, family, and your exact timing. Get the full ebook for just $5.">
+  <meta property="og:image" content="assets/images/ai-prompts-guide.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%233d6049'/><polygon points='50,15 80,75 20,75' fill='none' stroke='%23d4af37' stroke-width='4'/><polygon points='50,85 80,25 20,25' fill='none' stroke='%23f8f6f0' stroke-width='4'/></svg>">
+</head>
+<body class="page-ebook">
+
+  <!-- Celestial Particles Canvas -->
+  <canvas id="celestialCanvas" class="celestial-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="The Ancient Blueprint Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+            <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+            <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">THE ANCIENT BLUEPRINT</span>
+          <span class="brand-location">NEW YORK CITY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="readings.html" class="nav-link">Readings</a>
+        <a href="ai-jyotish.html" class="nav-link">AI Jyotish</a>
+        <a href="masterclass.html" class="nav-link">Masterclasses</a>
+        <a href="ebook.html" class="nav-link active">E-Book ($5)</a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <button class="sound-toggle-btn" id="soundToggle" title="Toggle Celestial Soundscape (432Hz)" aria-label="Toggle ambient sound">
+          <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="sound-icon sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span class="sound-label">Chimes</span>
+        </button>
+
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic header-cta">
+          <span>Book a Session</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="readings.html" class="mobile-nav-link">Readings & Sessions</a>
+        <a href="ai-jyotish.html" class="mobile-nav-link">AI Vedic Framework</a>
+        <a href="masterclass.html" class="mobile-nav-link">Live Masterclasses</a>
+        <a href="ebook.html" class="mobile-nav-link active">E-Book ($5)</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Book a Session</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <div class="page-hero-bg" data-parallax-speed="-0.2"></div>
+      <div class="parallax-floating-symbol sym-hero-1" data-parallax-speed="0.25" aria-hidden="true">📖</div>
+      <div class="parallax-floating-symbol sym-hero-3" data-parallax-speed="-0.22" aria-hidden="true">✦</div>
+
+      <div class="container page-hero-content">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">AI Prompts Digital Guidebook</span>
+        </div>
+        <h1 class="page-hero-title">AI Prompts for <span class="gradient-text">Every Part of Life</span></h1>
+        <p class="page-hero-subtitle">
+          Over 50+ battle-tested Rishi prompt templates for love, career, money, family, and exact transit timing. Available in full for just $5, or explore our free highlights sample.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCT SHOWCASE BANNER WITH TABLET MOCKUP -->
+    <section class="section-padding" style="position: relative; overflow: hidden;">
+      <div class="container">
+        <div class="ebook-banner reveal-on-scroll" data-delay="100">
+          <div class="ebook-content">
+            <span class="ebook-tag">DIGITAL COMPANION GUIDE · INSTANT PDF ACCESS</span>
+            <h2 class="ebook-title" style="font-size: 2.2rem; margin-bottom: 1rem;">
+              The Ancient Blueprint <span class="gradient-text">AI Guidebook</span>
+            </h2>
+            <p class="ebook-desc" style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.75rem;">
+              Crafted by 18-year Vedic astrologer Julie Taparia, this companion handbook translates complex Sanskrit Hora Shastra rules into copy-and-paste prompts for ChatGPT, Claude 3.5, and Google Gemini.
+            </p>
+
+            <div style="background: var(--green-pale); border-left: 3.5px solid var(--green-primary); padding: 1rem 1.25rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem;">
+              <span style="font-weight: 700; color: var(--green-dark); display: block; margin-bottom: 0.25rem;">⚡ Instant Universal Compatibility</span>
+              <span style="font-size: 0.9rem; color: var(--text-secondary);">Works with free and paid tiers of ChatGPT (GPT-4o), Claude 3.5 Sonnet, Gemini 1.5 Pro, and Perplexity AI.</span>
+            </div>
+
+            <div class="ebook-actions">
+              <a href="mailto:julietaparia@gmail.com?subject=AI%20prompts%20ebook%20purchase%20($5)" class="btn btn-primary btn-magnetic">
+                <span>Get Full E-Book ($5)</span>
+              </a>
+              <a href="mailto:julietaparia@gmail.com?subject=AI%20prompts%20free%20highlights%20request" class="btn btn-glass">
+                <span>Request Free Highlights</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="ebook-image-wrap" data-parallax-speed="0.08">
+            <img src="assets/images/ai-prompts-guide.jpg" alt="Vedic AI Prompts Ebook Guide" class="ebook-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE THE GUIDEBOOK -->
+    <section class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--green-border); border-bottom: 1px solid var(--green-border);">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">TABLE OF CONTENTS</span>
+          <h2 class="section-title">What's Inside <span class="gradient-text">The Guidebook</span></h2>
+          <p class="section-subtitle">
+            Five comprehensive chapters packed with structured prompt schemas, examples, and interpretation keys.
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <!-- Chapter 1 -->
+          <div class="module-card reveal-on-scroll" data-delay="100">
+            <span class="module-num">01</span>
+            <span class="module-tag">CHAPTER ONE</span>
+            <h3 class="module-title">Love, Marriage & Karmic Ties</h3>
+            <p class="module-desc">
+              Decode your 7th House of partnership, Upapada Lagna (marriage manifestation), Venus and Jupiter dignity, and cross-matching synastry prompts for navigating relationships.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> The "Partner Archetype" prompt template</li>
+              <li><span class="lesson-bullet">✦</span> Predicting marriage timing through Dasha + Jupiter transits</li>
+              <li><span class="lesson-bullet">✦</span> Unpacking repetitive karmic patterns (Rahu/Ketu axis)</li>
+            </ul>
+          </div>
+
+          <!-- Chapter 2 -->
+          <div class="module-card reveal-on-scroll" data-delay="200">
+            <span class="module-num">02</span>
+            <span class="module-tag">CHAPTER TWO</span>
+            <h3 class="module-title">Career, Dharma & Wealth Bhavas</h3>
+            <p class="module-desc">
+              Prompts engineered to identify your Amatyakaraka (career indicator), 10th House ruler strength, and wealth generation houses (2nd & 11th Dhana Bhavas) in changing job markets.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> "True Dharma & Career Sweet Spot" prompt</li>
+              <li><span class="lesson-bullet">✦</span> Evaluating job offer timing using transit Saturn & Rahu</li>
+              <li><span class="lesson-bullet">✦</span> Monetization strengths in the Dasamsa (D10) chart</li>
+            </ul>
+          </div>
+
+          <!-- Chapter 3 -->
+          <div class="module-card reveal-on-scroll" data-delay="300">
+            <span class="module-num">03</span>
+            <span class="module-tag">CHAPTER THREE</span>
+            <h3 class="module-title">Your Current Chapter (Dasha Cycles)</h3>
+            <p class="module-desc">
+              Never get surprised by major life transitions again. Learn how to prompt AI to map your Vimshottari Mahadasha and Antardasha sequence to understand the current assignment of your soul.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> "Current Life Assignment" prompt template</li>
+              <li><span class="lesson-bullet">✦</span> Dasha Sandhi transition guide (moving between periods)</li>
+              <li><span class="lesson-bullet">✦</span> Harmonizing personal plans with the planetary ruler</li>
+            </ul>
+          </div>
+
+          <!-- Chapter 4 -->
+          <div class="module-card reveal-on-scroll" data-delay="400">
+            <span class="module-num">04</span>
+            <span class="module-tag">CHAPTER FOUR</span>
+            <h3 class="module-title">Moon Sign & Subconscious Peace</h3>
+            <p class="module-desc">
+              Detailed prompts exploring your Chandra Lagna (Moon chart) and your specific Nakshatra. Discover your mental rest triggers, emotional vulnerabilities, and calming daily practices.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> Nakshatra psychological debrief prompt</li>
+              <li><span class="lesson-bullet">✦</span> Moon-Saturn (Sade Sati) guidance prompt</li>
+              <li><span class="lesson-bullet">✦</span> Ancient Vedic gemstone & botanical recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL PURCHASE CALL TO ACTION -->
+    <section class="section-padding text-center">
+      <div class="container" style="max-width: 680px;">
+        <span class="section-eyebrow">INSTANT DOWNLOAD</span>
+        <h2 class="section-title">Get Your Copy for <span class="gradient-text">Only $5</span></h2>
+        <p class="section-subtitle">
+          Receive the complete PDF guidebook containing all 50+ prompt templates, formatted examples, and AI setup instructions directly in your inbox.
+        </p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="mailto:julietaparia@gmail.com?subject=AI%20prompts%20ebook%20purchase%20($5)" class="btn btn-primary btn-magnetic">
+            <span>Purchase Full Guide ($5)</span>
+          </a>
+          <a href="mailto:julietaparia@gmail.com?subject=AI%20prompts%20free%20highlights%20request" class="btn btn-glass">
+            <span>Free Sample Highlights</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+                <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+                <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="footer-brand-title">THE ANCIENT BLUEPRINT</span>
+          </div>
+          <p class="footer-bio">
+            Bridging 5,000-year-old Vedic Jyotish with cutting-edge AI prompt intelligence. Julie Taparia provides deep personal clarity, life timing, and practical wisdom in New York City.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Julie Taparia</a></li>
+            <li><a href="readings.html">Readings & Consultations</a></li>
+            <li><a href="ai-jyotish.html">The Rishi AI Framework</a></li>
+            <li><a href="masterclass.html">Live Group Classes</a></li>
+            <li><a href="ebook.html">AI Prompts E-Book ($5)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-contact-list">
+            <li><a href="mailto:julietaparia@gmail.com" class="footer-contact-link"><span class="link-icon">✉️</span> julietaparia@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/julietaparia/" target="_blank" rel="noopener noreferrer" class="footer-contact-link"><span class="link-icon">📸</span> @julietaparia on Instagram</a></li>
+            <li><a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="footer-contact-link"><span class="link-icon">📅</span> Schedule on Calendly</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 The Ancient Blueprint · Julie Taparia · New York City.</p>
+        <p class="disclaimer">Vedic astrology provides guidance and spiritual insight. Clients hold ultimate agency for all personal choices.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

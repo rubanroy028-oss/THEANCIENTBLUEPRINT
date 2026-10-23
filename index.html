@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ancient Blueprint NYC · Julie Taparia | Vedic Astrology & AI</title>
+  <meta name="description" content="Ancient Vedic astrology made simple, with direct guidance from Julie Taparia, NYC astrologer of 18 years. Learn to read your birth chart and prompt AI with precision.">
+  <meta name="keywords" content="Vedic Astrology, AI Astrology Prompts, Julie Taparia, NYC Vedic Astrologer, Parasara Jyotish, Kundali Chart, Birth Chart Reading">
+  <link rel="canonical" href="https://www.theancientblueprint.com/">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="The Ancient Blueprint · Julie Taparia NYC">
+  <meta property="og:description" content="Ancient Vedic wisdom made simple. Learn to read your chart, then use AI with precision. 18 years practice in NYC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.theancientblueprint.com/">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+
+  <!-- Fonts: Google Fonts (Cinzel, Plus Jakarta Sans, Playfair Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%233d6049'/><polygon points='50,15 80,75 20,75' fill='none' stroke='%23d4af37' stroke-width='4'/><polygon points='50,85 80,25 20,25' fill='none' stroke='%23f8f6f0' stroke-width='4'/></svg>">
+</head>
+<body class="page-home">
+
+  <!-- Background Animated Starfield Canvas -->
+  <canvas id="celestialCanvas" class="celestial-canvas" aria-hidden="true"></canvas>
+
+  <!-- Reading Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="The Ancient Blueprint Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+            <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+            <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">THE ANCIENT BLUEPRINT</span>
+          <span class="brand-location">NEW YORK CITY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="readings.html" class="nav-link">Readings</a>
+        <a href="ai-jyotish.html" class="nav-link">AI Jyotish</a>
+        <a href="masterclass.html" class="nav-link">Masterclasses</a>
+        <a href="ebook.html" class="nav-link">E-Book ($5)</a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <!-- Ambient Sound Synthesizer Toggle (432Hz) -->
+        <button class="sound-toggle-btn" id="soundToggle" title="Toggle Celestial Soundscape (432Hz)" aria-label="Toggle ambient sound">
+          <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="sound-icon sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span class="sound-label">Chimes</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic header-cta">
+          <span>Book a Session</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow-icon">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="readings.html" class="mobile-nav-link">Readings & Sessions</a>
+        <a href="ai-jyotish.html" class="mobile-nav-link">AI Vedic Framework</a>
+        <a href="masterclass.html" class="mobile-nav-link">Live Masterclasses</a>
+        <a href="ebook.html" class="mobile-nav-link">E-Book ($5)</a>
+        <a href="#pathways" class="mobile-nav-link">The 5 Pathways</a>
+        <a href="#ai-sandbox" class="mobile-nav-link">AI Vedic Prompt Engine</a>
+        <a href="#kundali" class="mobile-nav-link">Interactive Kundali Map</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Book a Session</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==============================================================
+         1. HERO SECTION WITH MULTI-LAYER PARALLAX
+         ============================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Floating Parallax Background Glyphs -->
+      <div class="parallax-floating-symbol sym-hero-1" data-parallax-speed="0.28" aria-hidden="true">श्रीं</div>
+      <div class="parallax-floating-symbol sym-hero-2" data-parallax-speed="-0.22" aria-hidden="true">✦</div>
+      <div class="parallax-floating-symbol sym-hero-3" data-parallax-speed="0.35" aria-hidden="true">🪐</div>
+      <div class="parallax-floating-symbol sym-hero-4" data-parallax-speed="-0.3" aria-hidden="true">ॐ</div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Content with Parallax Drift -->
+        <div class="hero-content reveal-on-scroll" data-delay="100" data-parallax-speed="0.06">
+          <div class="hero-badge">
+            <span class="sparkle-icon">✨</span>
+            <span class="badge-text">18-Year Vedic Astrologer in NYC · Parasara Tradition</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-sub">ANCIENT WISDOM · MODERN INTELLIGENCE</span>
+            <span class="title-main gradient-text">The Ancient Blueprint</span>
+          </h1>
+
+          <!-- Typewriter Animated Subheading -->
+          <div class="typewriter-wrapper">
+            <span class="typewriter-prefix">Revealing: </span>
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Vedic astrology isn't only for scholars or an elite few. It belongs in everyday life. Learn the foundations live with Julie Taparia, then command artificial intelligence with surgical precision.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic btn-lg">
+              <span>Book a 45-Min Reading</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow-icon">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            
+            <a href="#ai-sandbox" class="btn btn-glass btn-magnetic btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-code-icon">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Test AI Sandbox</span>
+            </a>
+
+            <button class="btn btn-outline btn-whatsapp-trigger" id="whatsappOpenBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.813 2.796.814 3.183 0 5.77-2.586 5.77-5.766 0-3.18-2.587-5.766-5.77-5.766zm0 10.334c-.887 0-1.579-.236-2.29-.658l-.164-.097-1.701.446.454-1.658-.107-.17c-.463-.736-.708-1.597-.707-2.422.001-2.518 2.05-4.567 4.568-4.567 2.519 0 4.568 2.049 4.569 4.567 0 2.52-2.05 4.569-4.569 4.569z"/>
+              </svg>
+              <span>WhatsApp Circle</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges Under Hero -->
+          <div class="hero-trust-indicators">
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span>18 Years Practicing in NYC</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span>Pt. Sanjay Rath Parasara Course</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span>Certified in New Delhi, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero 3D Card / Visual Showcase with Counter-Parallax -->
+        <div class="hero-visual reveal-on-scroll" data-delay="300" data-parallax-speed="-0.1">
+          <div class="hero-card-3d tilt-card" id="heroTiltCard">
+            <div class="card-glow-reflection"></div>
+            <div class="hero-image-frame">
+              <img src="assets/images/hero-bg.jpg" alt="Vedic Celestial Blueprint Sri Yantra" class="hero-img" loading="eager">
+              <div class="hero-visual-overlay"></div>
+              
+              <!-- Floating Animated Badges with Differential Depth -->
+              <div class="floating-stat-badge stat-badge-top" data-parallax-speed="0.2">
+                <div class="badge-icon">🏛️</div>
+                <div class="badge-text-group">
+                  <div class="badge-num">5,000+ Years</div>
+                  <div class="badge-sub">Vedic Rishi Lineage</div>
+                </div>
+              </div>
+
+              <div class="floating-stat-badge stat-badge-bottom" data-parallax-speed="-0.16">
+                <div class="badge-icon">⚡</div>
+                <div class="badge-text-group">
+                  <div class="badge-num">100% Custom</div>
+                  <div class="badge-sub">Ready-to-Paste AI Prompts</div>
+                </div>
+              </div>
+
+              <!-- Interactive Rotating Sacred Geometry Compass SVG Overlay -->
+              <div class="sacred-geometry-rotator" data-parallax-speed="0.14">
+                <svg viewBox="0 0 200 200" class="rotating-ring">
+                  <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(176, 141, 75, 0.45)" stroke-width="1.5" stroke-dasharray="4 8"/>
+                  <circle cx="100" cy="100" r="70" fill="none" stroke="rgba(61, 96, 73, 0.5)" stroke-width="1"/>
+                  <polygon points="100,20 170,140 30,140" fill="none" stroke="rgba(176, 141, 75, 0.6)" stroke-width="1.5"/>
+                  <polygon points="100,180 170,60 30,60" fill="none" stroke="rgba(61, 96, 73, 0.6)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         2. INFINITE MARQUEE TICKER (Press & Collaborations)
+         ============================================================== -->
+    <section class="press-marquee-section" aria-label="Press and Collaborations">
+      <div class="marquee-tag">AS FEATURED IN & CONSULTED BY</div>
+      <div class="marquee-track-wrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          <div class="marquee-item"><span>BRAVO TV</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>NETFLIX'S INDIAN MATCHMAKING</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>UNITED NATIONS</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>ELLE & ALLURE</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>ANITA DONGRE</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>FABLE & MANE</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>BROOME STREET TEMPLE NYC</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>BETTER HOMES & GARDENS</span></div>
+          <div class="marquee-separator">✦</div>
+          <!-- Second instance for seamless loop -->
+          <div class="marquee-item"><span>BRAVO TV</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>NETFLIX'S INDIAN MATCHMAKING</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>UNITED NATIONS</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>ELLE & ALLURE</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>ANITA DONGRE</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>FABLE & MANE</span></div>
+          <div class="marquee-separator">✦</div>
+          <div class="marquee-item"><span>BROOME STREET TEMPLE NYC</span></div>
+          <div class="marquee-separator">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         3. CREDENTIALS & STATS COUNTER
+         ============================================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal-on-scroll" data-delay="100">
+            <div class="stat-number-wrapper">
+              <span class="stat-number count-up" data-target="18">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-title">Years of Vedic Jyotish</div>
+            <div class="stat-caption">Deep practice in New York City with international clients</div>
+          </div>
+
+          <div class="stat-card reveal-on-scroll" data-delay="200">
+            <div class="stat-number-wrapper">
+              <span class="stat-number count-up" data-target="7">0</span>
+              <span class="stat-suffix">-Year</span>
+            </div>
+            <div class="stat-title">Parasara Degree</div>
+            <div class="stat-caption">Studied under revered Guru Pt. Sanjay Rath; certified in New Delhi</div>
+          </div>
+
+          <div class="stat-card reveal-on-scroll" data-delay="300">
+            <div class="stat-number-wrapper">
+              <span class="stat-number count-up" data-target="100">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-title">Authentic Rishi Framework</div>
+            <div class="stat-caption">Prompts crafted to eliminate AI hallucinations and generic horoscopes</div>
+          </div>
+
+          <div class="stat-card reveal-on-scroll" data-delay="400">
+            <div class="stat-number-wrapper">
+              <span class="stat-number count-up" data-target="10">0</span>
+              <span class="stat-suffix">Max</span>
+            </div>
+            <div class="stat-title">Spots Per Live Class</div>
+            <div class="stat-caption">Intimate cohorts twice monthly to read your chart live</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         4. THE FIVE SACRED PATHWAYS (PORTAL BENTO GRID)
+         ============================================================== -->
+    <section class="pathways-section section-padding" id="pathways">
+      <div class="parallax-floating-symbol sym-philo-1" data-parallax-speed="0.22" aria-hidden="true">✦</div>
+      <div class="parallax-floating-symbol sym-philo-2" data-parallax-speed="-0.2" aria-hidden="true">गुरु</div>
+
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">CHOOSE YOUR GATEWAY</span>
+          <h2 class="section-title">The Five Sacred <span class="gradient-text">Pathways</span></h2>
+          <p class="section-subtitle">
+            Explore dedicated portals tailored to your journey—from 1-on-1 private readings and live small-group training to our proprietary AI prompt framework and $5 guidebook.
+          </p>
+        </div>
+
+        <div class="pathways-bento">
+          <!-- Pathway 1: Readings & Consultations (Large Bento) -->
+          <a href="readings.html" class="pathway-card pathway-span-7 tilt-card reveal-on-scroll" data-delay="100">
+            <div class="pathway-card-glow"></div>
+            <div>
+              <span class="pathway-badge-pill">🔮 1-ON-1 SESSIONS</span>
+              <h3 class="pathway-card-title">Vedic Readings & Consultations</h3>
+              <p class="pathway-card-desc">
+                Book a live 45-minute deep dive on your chart timing (Dasha cycles & transit shifts), or get rapid resolution on a single crossroad decision with a 15-minute laser call.
+              </p>
+              <ul class="pathway-features-mini">
+                <li><span class="bullet">✓</span> Full natal breakdown + Navamsha (D9) verification</li>
+                <li><span class="bullet">✓</span> Marriage timing & career purpose (10th house Amatyakaraka)</li>
+                <li><span class="bullet">✓</span> Raw birth coordinates formatted to paste straight into AI</li>
+              </ul>
+            </div>
+            <div class="pathway-card-action">
+              <span>Explore Reading Options</span>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </div>
+          </a>
+
+          <!-- Pathway 2: The Rishi AI Framework (Medium Bento) -->
+          <a href="ai-jyotish.html" class="pathway-card pathway-span-5 tilt-card reveal-on-scroll" data-delay="200">
+            <div class="pathway-card-glow"></div>
+            <div>
+              <span class="pathway-badge-pill">⚡ THE AI METHODOLOGY</span>
+              <h3 class="pathway-card-title">The Rishi AI Framework</h3>
+              <p class="pathway-card-desc">
+                Why large language models hallucinate when asked about horoscopes—and how the 4-pillar ancient Rishi protocol unlocks surgical precision in ChatGPT, Claude, and Gemini.
+              </p>
+              <ul class="pathway-features-mini">
+                <li><span class="bullet">✓</span> Ephemeris degree lock & Lahiri Ayanamsha</li>
+                <li><span class="bullet">✓</span> Bhava lordships vs. isolated sign placements</li>
+              </ul>
+            </div>
+            <div class="pathway-card-action">
+              <span>View Prompt Architecture</span>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </div>
+          </a>
+
+          <!-- Pathway 3: Live Masterclasses (Third Bento) -->
+          <a href="masterclass.html" class="pathway-card pathway-span-4 tilt-card reveal-on-scroll" data-delay="100">
+            <div class="pathway-card-glow"></div>
+            <div>
+              <span class="pathway-badge-pill">🏛️ LIVE WORKSHOPS</span>
+              <h3 class="pathway-card-title">Small-Group Cohorts</h3>
+              <p class="pathway-card-desc">
+                Twice-monthly live Zoom cohorts strictly capped at 10 students. Learn to read your own chart, join date-by-date without ongoing debt.
+              </p>
+            </div>
+            <div class="pathway-card-action">
+              <span>See Class Schedule</span>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </div>
+          </a>
+
+          <!-- Pathway 4: $5 AI Prompts Guidebook (Third Bento) -->
+          <a href="ebook.html" class="pathway-card pathway-span-4 tilt-card reveal-on-scroll" data-delay="200">
+            <div class="pathway-card-glow"></div>
+            <div>
+              <span class="pathway-badge-pill">📖 $5 DIGITAL COMPANION</span>
+              <h3 class="pathway-card-title">AI Prompts Guidebook</h3>
+              <p class="pathway-card-desc">
+                Over 50+ pre-engineered Rishi prompt templates across love, career, money, and transit timing. Instant PDF access for just $5.
+              </p>
+            </div>
+            <div class="pathway-card-action">
+              <span>Preview Chapters ($5)</span>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </div>
+          </a>
+
+          <!-- Pathway 5: About Julie Taparia (Third Bento) -->
+          <a href="about.html" class="pathway-card pathway-span-4 tilt-card reveal-on-scroll" data-delay="300">
+            <div class="pathway-card-glow"></div>
+            <div>
+              <span class="pathway-badge-pill">📜 18-YEAR LINEAGE</span>
+              <h3 class="pathway-card-title">Meet Julie Taparia</h3>
+              <p class="pathway-card-desc">
+                Certified in Guru Pt. Sanjay Rath's 7-year Parasara tradition in New Delhi. Resident astrologer at Broome Street Temple NYC.
+              </p>
+            </div>
+            <div class="pathway-card-action">
+              <span>Read Full Story</span>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         5. INTERACTIVE AI VEDIC PROMPT GENERATOR SANDBOX
+         ============================================================== -->
+    <section class="ai-sandbox-section section-padding" id="ai-sandbox">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">INTERACTIVE DEMO</span>
+          <h2 class="section-title">The Rishi Prompt <span class="gradient-text">Engine</span></h2>
+          <p class="section-subtitle">
+            See how Julie formats prompts with ancient Rishi principles for ChatGPT, Claude, and Gemini. Choose a domain below and experience real-time AI prompt synthesis.
+          </p>
+        </div>
+
+        <div class="sandbox-container reveal-on-scroll" data-delay="150">
+          <!-- Topic Selector Tabs -->
+          <div class="sandbox-tabs">
+            <button class="sandbox-tab active" data-topic="marriage">
+              <span class="tab-icon">💍</span>
+              <span>Marriage Timing</span>
+            </button>
+            <button class="sandbox-tab" data-topic="career">
+              <span class="tab-icon">🎯</span>
+              <span>Career & Purpose</span>
+            </button>
+            <button class="sandbox-tab" data-topic="relationships">
+              <span class="tab-icon">💫</span>
+              <span>Relationships & Karmic Ties</span>
+            </button>
+            <button class="sandbox-tab" data-topic="current-chapter">
+              <span class="tab-icon">⏳</span>
+              <span>Current Chapter (Dasha)</span>
+            </button>
+            <button class="sandbox-tab" data-topic="moon-sign">
+              <span class="tab-icon">🌙</span>
+              <span>Moon Sign Psychology</span>
+            </button>
+          </div>
+
+          <!-- Sandbox Screen / Terminal -->
+          <div class="sandbox-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">Rishi_Vedic_Prompt_Engine_v4.2.sh</div>
+              <div class="terminal-status">
+                <span class="status-pulse"></span>
+                <span class="status-text">AI Ready</span>
+              </div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="prompt-meta-info">
+                <span class="meta-label">Selected Domain:</span>
+                <span class="meta-value" id="currentTopicLabel">Marriage Timing & Partner Alignment</span>
+              </div>
+
+              <!-- Streamed Code Block -->
+              <div class="code-output-container">
+                <pre class="code-stream" id="codeStream"></pre>
+              </div>
+
+              <!-- Interactive Controls inside Terminal -->
+              <div class="terminal-actions">
+                <button class="btn btn-primary btn-sm btn-magnetic" id="copyPromptBtn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="copy-icon">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copyBtnText">Copy Prompt to Clipboard</span>
+                </button>
+
+                <button class="btn btn-glass btn-sm" id="replayPromptBtn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="refresh-icon">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                  </svg>
+                  <span>Re-generate</span>
+                </button>
+
+                <span class="sandbox-tip">💡 Tip: Paste into ChatGPT, Claude 3.5, or Gemini along with your chart data.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         6. CORE READING FOCUS AREAS (THE SIX LIFE QUESTIONS)
+         ============================================================== -->
+    <section class="areas-section section-padding" id="areas">
+      <!-- Floating Parallax Glyphs -->
+      <div class="parallax-floating-symbol sym-area-1" data-parallax-speed="0.25" aria-hidden="true">🪐</div>
+      <div class="parallax-floating-symbol sym-area-2" data-parallax-speed="-0.22" aria-hidden="true">शुक्र</div>
+
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">WHAT WE EXPLORE TOGETHER</span>
+          <h2 class="section-title">The Six Essential <span class="gradient-text">Life Questions</span></h2>
+          <p class="section-subtitle">
+            Whether booking a 45-minute deep dive or asking a 15-minute focused AI question, Julie unlocks clarity across these foundational pillars of your life.
+          </p>
+        </div>
+
+        <div class="areas-grid">
+          <!-- Area 1: Marriage Timing -->
+          <div class="area-card tilt-card reveal-on-scroll" data-delay="100">
+            <div class="area-card-glow"></div>
+            <div class="area-badge">7th House · Yuvati</div>
+            <div class="area-icon">💍</div>
+            <h3 class="area-title">Marriage Timing</h3>
+            <p class="area-description">
+              When is the right time to marry, and is this the right partner? Julie predicted a Bravo TV star's marriage and precisely who she would marry using Dasha cycles and Navamsha (D9) verification.
+            </p>
+            <div class="area-tags">
+              <span>Jupiter Transits</span>
+              <span>Venus Placement</span>
+              <span>7th House Lord</span>
+            </div>
+          </div>
+
+          <!-- Area 2: Career & Purpose -->
+          <div class="area-card tilt-card reveal-on-scroll" data-delay="150">
+            <div class="area-card-glow"></div>
+            <div class="area-badge">10th House · Karma</div>
+            <div class="area-icon">🎯</div>
+            <h3 class="area-title">Career & Purpose</h3>
+            <p class="area-description">
+              What is your true purpose, and what work fits your natural strengths? Identify your Amatyakaraka (career planet), 10th house planetary rulers, and how to position yourself in changing markets.
+            </p>
+            <div class="area-tags">
+              <span>Dharma Alignment</span>
+              <span>10th Bhava</span>
+              <span>Dasamsa (D10)</span>
+            </div>
+          </div>
+
+          <!-- Area 3: Relationships -->
+          <div class="area-card tilt-card reveal-on-scroll" data-delay="200">
+            <div class="area-card-glow"></div>
+            <div class="area-badge">Karmic Bonds · Upapada</div>
+            <div class="area-icon">💫</div>
+            <h3 class="area-title">Relationships & Patterns</h3>
+            <p class="area-description">
+              Compatibility, recurring patterns, and what you attract and why. Look behind repetitive relationship cycles to heal old attachments and enter partnerships grounded in shared destiny.
+            </p>
+            <div class="area-tags">
+              <span>Synastry</span>
+              <span>Rahu/Ketu Axis</span>
+              <span>Upapada Lagna</span>
+            </div>
+          </div>
+
+          <!-- Area 4: Current Chapter -->
+          <div class="area-card tilt-card reveal-on-scroll" data-delay="250">
+            <div class="area-card-glow"></div>
+            <div class="area-badge">Dasha Cycles</div>
+            <div class="area-icon">⏳</div>
+            <h3 class="area-title">Your Current Chapter</h3>
+            <p class="area-description">
+              Understand the period of life you are navigating right now and what it is asking of you. Discover which planet is running the show and how to harmonize your actions with its energy.
+            </p>
+            <div class="area-tags">
+              <span>Mahadasha</span>
+              <span>Antardasha</span>
+              <span>Gochar (Transits)</span>
+            </div>
+          </div>
+
+          <!-- Area 5: Moon Sign -->
+          <div class="area-card tilt-card reveal-on-scroll" data-delay="300">
+            <div class="area-card-glow"></div>
+            <div class="area-badge">Chandra Lagna</div>
+            <div class="area-icon">🌙</div>
+            <h3 class="area-title">What is Your Moon Sign?</h3>
+            <p class="area-description">
+              Your mental makeup: how you think, feel, and react, and what your mind needs to feel at peace. Western astrology looks primarily at the Sun; Vedic astrology reveals the subconscious through the Moon.
+            </p>
+            <div class="area-tags">
+              <span>Emotional Peace</span>
+              <span>Mind Makeup</span>
+              <span>Nakshatra Lord</span>
+            </div>
+          </div>
+
+          <!-- Area 6: Birth Time Rectification -->
+          <div class="area-card tilt-card reveal-on-scroll" data-delay="350">
+            <div class="area-card-glow"></div>
+            <div class="area-badge">Ascendant Verification</div>
+            <div class="area-icon">🕰️</div>
+            <h3 class="area-title">Is Your Birth Time Correct?</h3>
+            <p class="area-description">
+              Birth time rectification: confirm your true rising sign (ascendant/lagna). A difference of just 4 minutes can shift your divisional charts. Ensure your foundation is rock solid before querying AI.
+            </p>
+            <div class="area-tags">
+              <span>Rising Sign</span>
+              <span>Sub-Divisions</span>
+              <span>Precision Timing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         7. INTERACTIVE KUNDALI CHART MAP (Vedic Diamond Diagram)
+         ============================================================== -->
+    <section class="kundali-section section-padding" id="kundali">
+      <!-- Floating Parallax Glyphs -->
+      <div class="parallax-floating-symbol sym-kundali-1" data-parallax-speed="0.26" aria-hidden="true">♈</div>
+      <div class="parallax-floating-symbol sym-kundali-2" data-parallax-speed="-0.22" aria-hidden="true">♌</div>
+      <div class="parallax-floating-symbol sym-kundali-3" data-parallax-speed="0.3" aria-hidden="true">♐</div>
+
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">ANCIENT VISUAL INTELLIGENCE</span>
+          <h2 class="section-title">The Vedic Kundali <span class="gradient-text">Interactive Map</span></h2>
+          <p class="section-subtitle">
+            Explore the traditional North Indian Vedic birth chart (Kundali). Hover over any of the 12 Bhavas (houses) to discover its planetary energy and life significance.
+          </p>
+        </div>
+
+        <div class="kundali-layout">
+          <!-- Kundali SVG Diagram Container with Subtle Parallax Depth -->
+          <div class="kundali-chart-wrapper reveal-on-scroll" data-delay="100" data-parallax-speed="0.04">
+            <div class="kundali-chart-card">
+              <svg viewBox="0 0 600 600" class="kundali-svg" id="kundaliSvg">
+                <!-- Outer Square -->
+                <rect x="20" y="20" width="560" height="560" fill="rgba(12, 16, 32, 0.8)" stroke="#d4af37" stroke-width="3" rx="10"/>
+
+                <!-- Diagonals -->
+                <line x1="20" y1="20" x2="580" y2="580" stroke="#d4af37" stroke-width="2"/>
+                <line x1="20" y1="580" x2="580" y2="20" stroke="#d4af37" stroke-width="2"/>
+
+                <!-- Inner Diamond -->
+                <polygon points="300,20 580,300 300,580 20,300" fill="none" stroke="#d4af37" stroke-width="2"/>
+
+                <!-- 12 House Hit Areas (Polygons & Labels) -->
+                <!-- House 1 (Top Center Diamond) -->
+                <polygon points="300,20 440,160 300,300 160,160" class="kundali-house" data-house="1" />
+                <text x="300" y="165" class="house-label">1 · Tanu</text>
+
+                <!-- House 2 (Top Left Triangle) -->
+                <polygon points="20,20 300,20 160,160" class="kundali-house" data-house="2" />
+                <text x="160" y="70" class="house-label">2 · Dhana</text>
+
+                <!-- House 3 (Left Top Triangle) -->
+                <polygon points="20,20 160,160 20,300" class="kundali-house" data-house="3" />
+                <text x="70" y="160" class="house-label">3 · Sahaja</text>
+
+                <!-- House 4 (Left Diamond) -->
+                <polygon points="20,300 160,160 300,300 160,440" class="kundali-house" data-house="4" />
+                <text x="160" y="305" class="house-label">4 · Sukha</text>
+
+                <!-- House 5 (Left Bottom Triangle) -->
+                <polygon points="20,300 160,440 20,580" class="kundali-house" data-house="5" />
+                <text x="70" y="440" class="house-label">5 · Putra</text>
+
+                <!-- House 6 (Bottom Left Triangle) -->
+                <polygon points="20,580 160,440 300,580" class="kundali-house" data-house="6" />
+                <text x="160" y="530" class="house-label">6 · Ari</text>
+
+                <!-- House 7 (Bottom Center Diamond) -->
+                <polygon points="300,580 160,440 300,300 440,440" class="kundali-house" data-house="7" />
+                <text x="300" y="445" class="house-label">7 · Yuvati</text>
+
+                <!-- House 8 (Bottom Right Triangle) -->
+                <polygon points="300,580 440,440 580,580" class="kundali-house" data-house="8" />
+                <text x="440" y="530" class="house-label">8 · Randhra</text>
+
+                <!-- House 9 (Right Bottom Triangle) -->
+                <polygon points="440,440 580,300 580,580" class="kundali-house" data-house="9" />
+                <text x="530" y="440" class="house-label">9 · Dharma</text>
+
+                <!-- House 10 (Right Center Diamond) -->
+                <polygon points="300,300 440,160 580,300 440,440" class="kundali-house" data-house="10" />
+                <text x="440" y="305" class="house-label">10 · Karma</text>
+
+                <!-- House 11 (Right Top Triangle) -->
+                <polygon points="440,160 580,20 580,300" class="kundali-house" data-house="11" />
+                <text x="530" y="160" class="house-label">11 · Labha</text>
+
+                <!-- House 12 (Top Right Triangle) -->
+                <polygon points="300,20 580,20 440,160" class="kundali-house" data-house="12" />
+                <text x="440" y="70" class="house-label">12 · Vyaya</text>
+
+                <!-- Center Sacred Symbol -->
+                <circle cx="300" cy="300" r="14" fill="#d4af37" opacity="0.3"/>
+                <circle cx="300" cy="300" r="6" fill="#d4af37"/>
+              </svg>
+              <div class="kundali-instruction">
+                <span>👆 Hover or tap any house to inspect its Vedic mystery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic House Detail Card -->
+          <div class="kundali-detail-card reveal-on-scroll" data-delay="200" id="kundaliDetailCard">
+            <div class="detail-badge-row">
+              <span class="detail-house-num" id="detailHouseNum">House 1</span>
+              <span class="detail-sanskrit" id="detailSanskrit">Tanu Bhava</span>
+            </div>
+            <h3 class="detail-title" id="detailTitle">The Ascendant & Physical Self</h3>
+            <p class="detail-description" id="detailDescription">
+              The 1st House represents your physical body, vitality, innate persona, personality, and how the world experiences your energy. It determines your rising sign (Lagna) and colors your entire chart.
+            </p>
+            <div class="detail-meta-grid">
+              <div class="meta-box">
+                <span class="meta-title">Natural Ruler</span>
+                <span class="meta-value" id="detailRuler">Aries / Mars</span>
+              </div>
+              <div class="meta-box">
+                <span class="meta-title">Key Themes</span>
+                <span class="meta-value" id="detailThemes">Vitality, Destiny, Identity, Outlook</span>
+              </div>
+              <div class="meta-box">
+                <span class="meta-title">AI Prompt Query</span>
+                <span class="meta-value" id="detailAiRole">"Examine Lagna lord placement and degrees"</span>
+              </div>
+            </div>
+            <div class="detail-cta">
+              <a href="readings.html" class="btn btn-outline btn-sm">
+                <span>Decode in Your Session</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow-icon">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         8. FULL-WIDTH IMMERSIVE PARALLAX WISDOM HORIZON
+         ============================================================== -->
+    <section class="parallax-quote-section" id="wisdom-parallax">
+      <div class="parallax-quote-bg" data-parallax-speed="-0.28"></div>
+      <div class="parallax-quote-overlay"></div>
+      
+      <!-- Multi-layer Floating Glyphs -->
+      <div class="parallax-floating-symbol sym-quote-1" data-parallax-speed="0.32" aria-hidden="true">✦</div>
+      <div class="parallax-floating-symbol sym-quote-2" data-parallax-speed="-0.26" aria-hidden="true">🪐</div>
+      <div class="parallax-floating-symbol sym-quote-3" data-parallax-speed="0.45" aria-hidden="true">☀️</div>
+      <div class="parallax-floating-symbol sym-quote-4" data-parallax-speed="-0.38" aria-hidden="true">🌙</div>
+
+      <div class="container parallax-quote-container">
+        <div class="parallax-quote-content is-revealed" data-parallax-speed="0.08">
+          <div class="parallax-symbol-header">
+            <span class="sacred-mantra">JYOTISHA · THE LIGHT OF SACRED TIME</span>
+          </div>
+          <blockquote class="parallax-blockquote">
+            “The stars do not force; they reveal the current of your karma. When you decode your ancient blueprint, AI transforms from a generic guess into an instrument of personal clarity.”
+          </blockquote>
+          <div class="parallax-quote-author">
+            <div class="author-avatar-gold">🏛️</div>
+            <div class="author-info-group">
+              <span class="author-name">Julie Taparia</span>
+              <span class="author-meta">18-Year Vedic Astrologer · New York City</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         9. TESTIMONIALS SLIDER SECTION
+         ============================================================== -->
+    <section class="reviews-section section-padding" id="reviews">
+      <!-- Watermark & Parallax Celestial Floating Glyphs -->
+      <div class="reviews-watermark" data-parallax-speed="-0.15" aria-hidden="true">JYOTISHA</div>
+      <div class="parallax-floating-symbol sym-review-1" data-parallax-speed="0.22" aria-hidden="true">✦</div>
+      <div class="parallax-floating-symbol sym-review-2" data-parallax-speed="-0.18" aria-hidden="true">✨</div>
+
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">WHAT STUDENTS & CLIENTS SAY</span>
+          <h2 class="section-title">Clear, Logical, <span class="gradient-text">and Grounded</span></h2>
+          <p class="section-subtitle">
+            Authentic reviews from students of Julie's Vedic Astrology Bootcamp, taught at Broome Street Temple and through The Vedic Studio.
+          </p>
+        </div>
+
+        <!-- Interactive Testimonials Slider -->
+        <div class="slider-wrapper reveal-on-scroll" data-delay="100">
+          <div class="slider-viewport" id="testimonialSlider">
+            <!-- Review 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-card">
+                <div class="review-stars">★★★★★</div>
+                <blockquote class="review-quote">
+                  “Julie's Vedic Astrology Bootcamp has been such a fun and enlightening experience for me. She has shared so much information & given us tools to set us on a path to reading our own charts with understanding.”
+                </blockquote>
+                <div class="review-author">
+                  <div class="author-avatar">✨</div>
+                  <div class="author-info">
+                    <div class="author-name">Bootcamp Graduate</div>
+                    <div class="author-meta">Broome Street Temple Cohort · NYC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="review-stars">★★★★★</div>
+                <blockquote class="review-quote">
+                  “She is clear, logical and grounds her teachings in a deep spiritual insight that comes from many years of practice. Thanks Julie for giving me the power to read my stars and for such a well designed program.”
+                </blockquote>
+                <div class="review-author">
+                  <div class="author-avatar">🌟</div>
+                  <div class="author-info">
+                    <div class="author-name">Vedic Studio Student</div>
+                    <div class="author-meta">The Vedic Studio Community</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="review-stars">★★★★★</div>
+                <blockquote class="review-quote">
+                  “Julie is an amazing vedic astrologer and has a special calmness to her. She is such a great teacher who explains everything so well. She has a very systematic logical approach where she really breaks things down well.”
+                </blockquote>
+                <div class="review-author">
+                  <div class="author-avatar">☀️</div>
+                  <div class="author-info">
+                    <div class="author-name">Chart Reading Client</div>
+                    <div class="author-meta">New York City</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="review-stars">★★★★★</div>
+                <blockquote class="review-quote">
+                  “She's made a deeply complex topic feel simple, structured, and profoundly empowering. I was able to prompt AI with my exact coordinates and the results were shockingly accurate!”
+                </blockquote>
+                <div class="review-author">
+                  <div class="author-avatar">💫</div>
+                  <div class="author-info">
+                    <div class="author-name">Masterclass Participant</div>
+                    <div class="author-meta">AI Prompt Cohort</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-arrow prev" id="sliderPrevBtn" aria-label="Previous review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            
+            <div class="slider-dots" id="sliderDots">
+              <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+              <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+              <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
+              <button class="slider-dot" data-slide="3" aria-label="Slide 4"></button>
+            </div>
+
+            <button class="slider-arrow next" id="sliderNextBtn" aria-label="Next review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         10. FINAL INVITATION CALL TO ACTION
+         ============================================================== -->
+    <section class="section-padding text-center">
+      <div class="container" style="max-width: 760px;">
+        <span class="section-eyebrow">STEP INTO CLARITY</span>
+        <h2 class="section-title">Ready to Read Your <span class="gradient-text">Ancient Blueprint?</span></h2>
+        <p class="section-subtitle">
+          Choose between an intimate 1-on-1 consultation with Julie, joining our live masterclasses, or downloading our $5 prompt companion guidebook.
+        </p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="readings.html" class="btn btn-primary btn-magnetic">
+            <span>Book a 45-Min Reading</span>
+          </a>
+          <a href="ebook.html" class="btn btn-glass">
+            <span>Get AI E-Book ($5)</span>
+          </a>
+          <button class="btn btn-outline" id="bottomWhatsappTrigger">
+            <span>Join WhatsApp Circle</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================================
+       11. LUXURY FOOTER
+       ============================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+                <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+                <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="footer-brand-title">THE ANCIENT BLUEPRINT</span>
+          </div>
+          <p class="footer-bio">
+            Bridging 5,000-year-old Vedic Jyotish with cutting-edge AI prompt intelligence. Julie Taparia provides deep personal clarity, life timing, and practical wisdom in New York City.
+          </p>
+          <div class="footer-badges">
+            <span class="footer-pill">Parasara Tradition</span>
+            <span class="footer-pill">New Delhi Certified 2024</span>
+            <span class="footer-pill">NYC Loft Studio</span>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home Portal</a></li>
+            <li><a href="about.html">About Julie Taparia</a></li>
+            <li><a href="readings.html">Readings & Consultations</a></li>
+            <li><a href="ai-jyotish.html">The Rishi AI Framework</a></li>
+            <li><a href="masterclass.html">Live Group Classes</a></li>
+            <li><a href="ebook.html">AI Prompts E-Book ($5)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Booking -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Consult & Connect</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="mailto:julietaparia@gmail.com" class="footer-contact-link">
+                <span class="link-icon">✉️</span>
+                <span>julietaparia@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/julietaparia/" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                <span class="link-icon">📸</span>
+                <span>@julietaparia on Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                <span class="link-icon">📅</span>
+                <span>Schedule on Calendly</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span id="currentYear">2026</span> The Ancient Blueprint · Julie Taparia · New York City. All Rights Reserved.
+        </p>
+        <p class="disclaimer">
+          Vedic astrology provides guidance and spiritual insight. Clients hold ultimate agency for all personal and financial choices.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP / CONTACT MODAL -->
+  <div class="modal-backdrop" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon">✨</div>
+        <h3 class="modal-title">Join The Ancient Blueprint Circle</h3>
+        <p class="modal-desc">
+          Connect directly with Julie Taparia via email or request access to the private WhatsApp study group.
+        </p>
+      </div>
+
+      <form class="modal-form" id="inquiryForm" onsubmit="event.preventDefault(); window.location.href='mailto:julietaparia@gmail.com?subject=Ancient%20Blueprint%20Inquiry&body=' + encodeURIComponent(document.getElementById('modalMessage').value);">
+        <div class="form-group">
+          <label for="modalName">Your Name</label>
+          <input type="text" id="modalName" placeholder="e.g. Maya Sharma" required>
+        </div>
+        <div class="form-group">
+          <label for="modalEmail">Your Email</label>
+          <input type="email" id="modalEmail" placeholder="e.g. maya@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="modalInterest">Area of Interest</label>
+          <select id="modalInterest">
+            <option value="WhatsApp Community">WhatsApp Community Access</option>
+            <option value="45-Minute Session">45-Minute Reading</option>
+            <option value="15-Minute AI Question">15-Minute AI Question</option>
+            <option value="Live Group Course">Live Group Course (10 spots)</option>
+            <option value="AI Prompts Ebook">AI Prompts Ebook ($5)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="modalMessage">Your Message / Question</label>
+          <textarea id="modalMessage" rows="3" placeholder="Tell Julie about your birth details or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>Send Inquiry to Julie</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toastMessage">Prompt copied to clipboard!</span>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

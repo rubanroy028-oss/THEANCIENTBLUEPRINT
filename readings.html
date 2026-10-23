@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vedic Astrology Readings & Consultations | Julie Taparia NYC · The Ancient Blueprint</title>
+  <meta name="description" content="Book a 1-on-1 Vedic Astrology reading with Julie Taparia in NYC. 45-minute comprehensive sessions, 15-minute laser AI questions, and birth time rectification.">
+  <link rel="canonical" href="https://www.theancientblueprint.com/readings.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Vedic Astrology Readings & Consultations · Julie Taparia NYC">
+  <meta property="og:description" content="Personalized Vedic Jyotish sessions decoding your current Dasha, marriage timing, career purpose, and raw birth chart data formatted for AI.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%233d6049'/><polygon points='50,15 80,75 20,75' fill='none' stroke='%23d4af37' stroke-width='4'/><polygon points='50,85 80,25 20,25' fill='none' stroke='%23f8f6f0' stroke-width='4'/></svg>">
+</head>
+<body class="page-readings">
+
+  <!-- Celestial Particles Canvas -->
+  <canvas id="celestialCanvas" class="celestial-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="The Ancient Blueprint Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+            <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+            <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">THE ANCIENT BLUEPRINT</span>
+          <span class="brand-location">NEW YORK CITY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="readings.html" class="nav-link active">Readings</a>
+        <a href="ai-jyotish.html" class="nav-link">AI Jyotish</a>
+        <a href="masterclass.html" class="nav-link">Masterclasses</a>
+        <a href="ebook.html" class="nav-link">E-Book ($5)</a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <button class="sound-toggle-btn" id="soundToggle" title="Toggle Celestial Soundscape (432Hz)" aria-label="Toggle ambient sound">
+          <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="sound-icon sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span class="sound-label">Chimes</span>
+        </button>
+
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic header-cta">
+          <span>Book a Session</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="readings.html" class="mobile-nav-link active">Readings & Sessions</a>
+        <a href="ai-jyotish.html" class="mobile-nav-link">AI Vedic Framework</a>
+        <a href="masterclass.html" class="mobile-nav-link">Live Masterclasses</a>
+        <a href="ebook.html" class="mobile-nav-link">E-Book ($5)</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Book a Session</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <div class="page-hero-bg" data-parallax-speed="-0.22"></div>
+      <div class="parallax-floating-symbol sym-hero-1" data-parallax-speed="0.28" aria-hidden="true">🪐</div>
+      <div class="parallax-floating-symbol sym-hero-3" data-parallax-speed="-0.25" aria-hidden="true">✦</div>
+
+      <div class="container page-hero-content">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Readings & Consultations</span>
+        </div>
+        <h1 class="page-hero-title">Decode Your Timing, <span class="gradient-text">Karma & Purpose</span></h1>
+        <p class="page-hero-subtitle">
+          Every reading pairs 18 years of rigorous Parasara lineage expertise with exact birth chart exports formatted to paste straight into your AI study partner.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONSULTATION OFFERINGS GRID (Parallax Columns) -->
+    <section class="section-padding" style="position: relative; overflow: hidden;">
+      <div class="parallax-floating-symbol sym-area-1" data-parallax-speed="0.22" aria-hidden="true">शुक्र</div>
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">CHOOSE YOUR SESSION TYPE</span>
+          <h2 class="section-title">One-on-One Consultations <span class="gradient-text">with Julie</span></h2>
+          <p class="section-subtitle">
+            Whether facing a pivotal life crossroad or needing swift laser clarity on a single burning decision.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Session Option 1: 45-Minute Deep Dive -->
+          <div class="pricing-card-col" data-parallax-speed="-0.04">
+            <div class="pricing-card tilt-card reveal-on-scroll" data-delay="100">
+              <div class="pricing-badge-popular">FLAGSHIP CONSULTATION</div>
+              <div class="pricing-header">
+                <div class="pricing-icon">🔮</div>
+                <h3 class="pricing-title">45-Minute Comprehensive</h3>
+                <p class="pricing-subtitle">In-depth live 1-on-1 reading via Zoom</p>
+              </div>
+              <div class="pricing-details">
+                <p class="pricing-summary">
+                  We look at your complete chart, your current timing (Dasha & Gochar planetary transits), and the specific decision currently in front of you. Julie delivers profound clarity on relationships, career path, and life pivots.
+                </p>
+              </div>
+              <ul class="pricing-checklist">
+                <li><span class="chk-icon">✓</span> Natal chart (Rasi D1) and Navamsha (D9) verification</li>
+                <li><span class="chk-icon">✓</span> Current Mahadasha & Antardasha cycle breakdown</li>
+                <li><span class="chk-icon">✓</span> Marriage timing, partner compatibility & karmic bonds</li>
+                <li><span class="chk-icon">✓</span> Career alignment (10th house & Amatyakaraka)</li>
+                <li><span class="chk-icon">✓</span> Formatted chart details ready to copy-paste into AI</li>
+                <li><span class="chk-icon">✓</span> Session recording & classical remedial guidance</li>
+              </ul>
+              <div class="pricing-cta-wrap">
+                <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-magnetic">
+                  <span>Schedule 45-Min Session</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session Option 2: 15-Minute Laser AI Question -->
+          <div class="pricing-card-col" data-parallax-speed="0.04">
+            <div class="pricing-card tilt-card reveal-on-scroll" data-delay="200">
+              <div class="pricing-header">
+                <div class="pricing-icon">⚡</div>
+                <h3 class="pricing-title">15-Minute Laser Call</h3>
+                <p class="pricing-subtitle">Fast, sharp resolution for 1 specific question</p>
+              </div>
+              <div class="pricing-details">
+                <p class="pricing-summary">
+                  A focused, rapid live call to get an answer to one burning question, using ancient Vedic principles and AI synthesis together. Fast, sharp, and directly actionable.
+                </p>
+              </div>
+              <ul class="pricing-checklist">
+                <li><span class="chk-icon">✓</span> One specific burning question resolved live</li>
+                <li><span class="chk-icon">✓</span> Immediate clarity on current transit timing</li>
+                <li><span class="chk-icon">✓</span> Live synthesis of Vedic logic with AI reasoning</li>
+                <li><span class="chk-icon">✓</span> Custom Rishi prompt snippet tailored to your question</li>
+                <li><span class="chk-icon">✓</span> Ideal for quick relationship or job offer decisions</li>
+              </ul>
+              <div class="pricing-cta-wrap">
+                <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-block btn-magnetic">
+                  <span>Ask a Laser Question</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session Option 3: Birth Time Rectification -->
+          <div class="pricing-card-col" data-parallax-speed="-0.03">
+            <div class="pricing-card tilt-card reveal-on-scroll" data-delay="300">
+              <div class="pricing-header">
+                <div class="pricing-icon">🕰️</div>
+                <h3 class="pricing-title">Birth Time Rectification</h3>
+                <p class="pricing-subtitle">Ascendant & Divisional Verification</p>
+              </div>
+              <div class="pricing-details">
+                <p class="pricing-summary">
+                  Unsure of your exact birth minute? A difference of just 4 minutes can shift your rising sign and divisional charts. Julie reconstructs your true Ascendant using landmark past life milestones.
+                </p>
+              </div>
+              <ul class="pricing-checklist">
+                <li><span class="chk-icon">✓</span> Cross-referencing past milestone dates (moves, marriages, degrees)</li>
+                <li><span class="chk-icon">✓</span> Micro-division (D9, D10, D24) verification</li>
+                <li><span class="chk-icon">✓</span> True Ascendant (Lagna) degree lock</li>
+                <li><span class="chk-icon">✓</span> Clean data export for future flawless AI prompts</li>
+              </ul>
+              <div class="pricing-cta-wrap">
+                <a href="mailto:julietaparia@gmail.com?subject=Birth%20Time%20Rectification%20Inquiry" class="btn btn-glass btn-block btn-magnetic">
+                  <span>Inquire for Rectification</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP-BY-STEP PREPARATION GUIDE -->
+    <section class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--green-border); border-bottom: 1px solid var(--green-border);">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">HOW TO PREPARE</span>
+          <h2 class="section-title">Preparing for Your <span class="gradient-text">Reading</span></h2>
+          <p class="section-subtitle">
+            Three simple steps to make your consultation exceptionally focused, insightful, and practical.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal-on-scroll" data-delay="100">
+            <div class="step-num-badge">1</div>
+            <h3 class="step-title">Gather Exact Birth Data</h3>
+            <p class="step-desc">
+              Locate your official birth certificate. You will need your exact date of birth, time (down to the minute), and city/state or country of birth.
+            </p>
+          </div>
+
+          <div class="step-card reveal-on-scroll" data-delay="200">
+            <div class="step-num-badge">2</div>
+            <h3 class="step-title">Define Your Core Focus</h3>
+            <p class="step-desc">
+              What question or chapter is pressing most? Marriage timing, career transition, relocated living, or health? Bringing 1–3 clear themes maximizes your time.
+            </p>
+          </div>
+
+          <div class="step-card reveal-on-scroll" data-delay="300">
+            <div class="step-num-badge">3</div>
+            <h3 class="step-title">Receive Your AI Blueprint</h3>
+            <p class="step-desc">
+              After the reading, receive your chart coordinates written out in clean prompt format, ready to paste straight into ChatGPT or Claude for lifelong study.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS ACCORDION -->
+    <section class="section-padding">
+      <div class="container faq-section">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">CLEAR ANSWERS</span>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-subtitle">
+            Everything you need to know about how Vedic astrology works and what to expect in your session.
+          </p>
+        </div>
+
+        <div class="faq-list reveal-on-scroll" data-delay="150">
+          <!-- Question 1 -->
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>What is the difference between Vedic and Western astrology?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Western astrology uses the Tropical zodiac (tied to the equinox seasons). Vedic astrology uses the Sidereal zodiac (tied to the actual visible astronomical constellations). Due to the precession of the equinoxes (Ayanamsha), your signs typically shift back about 24 degrees in Vedic astrology. Western focuses on Sun sign psychology; Vedic focuses deeply on your Ascendant, Moon sign, and exact Dasha time cycles.
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What if I do not have my exact birth time?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              If your time is within a 15–30 minute window, Julie can often verify your rising sign through Birth Time Rectification by reviewing major milestone dates (graduations, marriages, relocations). If you only know morning or evening, we can still analyze your Chandra Lagna (Moon chart) for mental makeup and overarching dasha patterns.
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does AI fit into my reading?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Most people who query AI about their horoscope get hallucinations because AI doesn't compute divisional charts or exact Ayanamsha degrees accurately on its own. Julie prepares your exact birth coordinates, ascendant, nakshatra padas, and current Dasha formatted into copyable prompt code so AI becomes a reliable personal study partner.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are sessions recorded?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes, all 45-minute Zoom sessions are recorded so you can re-listen to timing dates, planetary recommendations, and personalized mantras anytime in the future.
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic">
+            <span>Book Your Session on Calendly</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+                <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+                <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="footer-brand-title">THE ANCIENT BLUEPRINT</span>
+          </div>
+          <p class="footer-bio">
+            Bridging 5,000-year-old Vedic Jyotish with cutting-edge AI prompt intelligence. Julie Taparia provides deep personal clarity, life timing, and practical wisdom in New York City.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Julie Taparia</a></li>
+            <li><a href="readings.html">Readings & Consultations</a></li>
+            <li><a href="ai-jyotish.html">The Rishi AI Framework</a></li>
+            <li><a href="masterclass.html">Live Group Classes</a></li>
+            <li><a href="ebook.html">AI Prompts E-Book ($5)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-contact-list">
+            <li><a href="mailto:julietaparia@gmail.com" class="footer-contact-link"><span class="link-icon">✉️</span> julietaparia@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/julietaparia/" target="_blank" rel="noopener noreferrer" class="footer-contact-link"><span class="link-icon">📸</span> @julietaparia on Instagram</a></li>
+            <li><a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="footer-contact-link"><span class="link-icon">📅</span> Schedule on Calendly</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 The Ancient Blueprint · Julie Taparia · New York City.</p>
+        <p class="disclaimer">Vedic astrology provides guidance and spiritual insight. Clients hold ultimate agency for all personal choices.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

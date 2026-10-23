@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Julie Taparia | 18 Years of Vedic Astrology in NYC · The Ancient Blueprint</title>
+  <meta name="description" content="Meet Julie Taparia, NYC Vedic Astrologer with 18 years of study, certified in Pt. Sanjay Rath's 7-year Parasara tradition in New Delhi. Consultant to Bravo TV, Netflix, and UN leaders.">
+  <link rel="canonical" href="https://www.theancientblueprint.com/about.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="About Julie Taparia · Vedic Astrologer NYC">
+  <meta property="og:description" content="18 years of Vedic Astrology practice. Studied Pt. Sanjay Rath Parasara course, featured on Bravo TV, Netflix, and United Nations.">
+  <meta property="og:image" content="assets/images/julie-taparia.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%233d6049'/><polygon points='50,15 80,75 20,75' fill='none' stroke='%23d4af37' stroke-width='4'/><polygon points='50,85 80,25 20,25' fill='none' stroke='%23f8f6f0' stroke-width='4'/></svg>">
+</head>
+<body class="page-about">
+
+  <!-- Background Canvas -->
+  <canvas id="celestialCanvas" class="celestial-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="The Ancient Blueprint Home">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+            <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+            <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">THE ANCIENT BLUEPRINT</span>
+          <span class="brand-location">NEW YORK CITY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="readings.html" class="nav-link">Readings</a>
+        <a href="ai-jyotish.html" class="nav-link">AI Jyotish</a>
+        <a href="masterclass.html" class="nav-link">Masterclasses</a>
+        <a href="ebook.html" class="nav-link">E-Book ($5)</a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+        <button class="sound-toggle-btn" id="soundToggle" title="Toggle Celestial Soundscape (432Hz)" aria-label="Toggle ambient sound">
+          <svg class="sound-icon sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="sound-icon sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span class="sound-label">Chimes</span>
+        </button>
+
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic header-cta">
+          <span>Book a Session</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link active">About</a>
+        <a href="readings.html" class="mobile-nav-link">Readings & Sessions</a>
+        <a href="ai-jyotish.html" class="mobile-nav-link">AI Vedic Framework</a>
+        <a href="masterclass.html" class="mobile-nav-link">Live Masterclasses</a>
+        <a href="ebook.html" class="mobile-nav-link">E-Book ($5)</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Book a Session</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- PAGE HERO BANNER -->
+    <section class="page-hero">
+      <div class="page-hero-bg" data-parallax-speed="-0.2"></div>
+      <div class="parallax-floating-symbol sym-hero-1" data-parallax-speed="0.25" aria-hidden="true">श्रीं</div>
+      <div class="parallax-floating-symbol sym-hero-3" data-parallax-speed="-0.22" aria-hidden="true">✦</div>
+
+      <div class="container page-hero-content">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">About Julie Taparia</span>
+        </div>
+        <h1 class="page-hero-title">Ancient Lineage. <span class="gradient-text">Modern Clarity.</span></h1>
+        <p class="page-hero-subtitle">
+          Meet Julie Taparia—Vedic Astrologer with 18 years of rigorous practice in New York City, certified under Guru Pt. Sanjay Rath in New Delhi, bridging sacred Rishi wisdom with 21st-century intelligence.
+        </p>
+      </div>
+    </section>
+
+    <!-- DETAILED BIOGRAPHY & STORY SECTION -->
+    <section class="section-padding" style="position: relative; overflow: hidden;">
+      <div class="parallax-floating-symbol sym-philo-2" data-parallax-speed="-0.2" aria-hidden="true">गुरु</div>
+      <div class="container">
+        <div class="about-grid">
+          <!-- Portrait with Parallax Depth -->
+          <div class="about-visual reveal-on-scroll" data-delay="100" data-parallax-speed="0.05">
+            <div class="sacred-geometry-aura" data-parallax-speed="-0.12" aria-hidden="true">
+              <svg viewBox="0 0 200 200" width="100%" height="100%">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(176, 141, 75, 0.3)" stroke-width="1.5" stroke-dasharray="4 6"/>
+                <polygon points="100,15 175,145 25,145" fill="none" stroke="rgba(61, 96, 73, 0.25)" stroke-width="1.5"/>
+                <polygon points="100,185 175,55 25,55" fill="none" stroke="rgba(176, 141, 75, 0.25)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="portrait-card tilt-card">
+              <div class="portrait-image-wrapper">
+                <img src="assets/images/julie-taparia.jpg" alt="Julie Taparia Vedic Astrologer NYC" class="portrait-img">
+                <div class="portrait-gradient-overlay"></div>
+                <div class="portrait-badge">
+                  <span class="portrait-badge-icon">📍</span>
+                  <span>New York City · 18-Year Practice</span>
+                </div>
+              </div>
+              <div class="portrait-caption">
+                <div class="caption-name">Julie Taparia</div>
+                <div class="caption-title">Parasara Certified Jyotisha · New Delhi 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- In-Depth Journey Narrative -->
+          <div class="about-content reveal-on-scroll" data-delay="200" data-parallax-speed="-0.03">
+            <span class="section-eyebrow">THE 18-YEAR VOYAGE</span>
+            <h2 class="section-title">Rooted in Tradition, <span class="gradient-text">Designed for Life</span></h2>
+            
+            <div class="about-statement">
+              "Vedic astrology isn't only for scholars in monasteries or an elite few. It belongs in everyday life. My goal is to hand you the blueprint of your own chart so you can walk through life with deep calm and clear timing."
+            </div>
+
+            <p class="about-paragraph">
+              Julie Taparia has devoted <strong>18 years</strong> to the deep study and personal practice of Vedic Jyotish (the science of celestial light). Her study culminated in the prestigious <strong>7-Year Parasara Jyotisa Course (PJC)</strong> taught under revered spiritual authority <strong>Pt. Sanjay Rath</strong>, one of India's most celebrated living exponents of the ancient Jaimini and Parasara traditions. Julie was formally certified in New Delhi in 2024.
+            </p>
+
+            <p class="about-paragraph">
+              Operating from New York City, Julie has counseled corporate leaders, creatives, founders, and seekers navigating crossroad decisions. Her predictions have gained widespread recognition: she appeared on national television with a <strong>Bravo TV star</strong> where she accurately predicted her upcoming marriage and precisely who she would marry, verified through Navamsha (D9) and Dasha transit alignment.
+            </p>
+
+            <p class="about-paragraph">
+              During 2022–2023, Julie served as the <strong>In-House Vedic Astrologer at Broome Street Temple NYC</strong>, conducting beloved 6-week foundational immersion courses and hands-on Vedic Astrology Bootcamps. She has also delivered masterclasses for <em>Single to Shaadi</em>, co-hosted Tarot & Jyotish workshops with renowned author Sasha Graham, and designed human-archetype seminars.
+            </p>
+
+            <div class="about-actions" style="margin-top: 2rem;">
+              <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic">
+                <span>Consult with Julie</span>
+              </a>
+              <a href="readings.html" class="btn btn-glass">
+                <span>View Reading Options</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS & PILLARS GRID -->
+    <section class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--green-border); border-bottom: 1px solid var(--green-border);">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">FORMAL ACADEMIC TRADITION</span>
+          <h2 class="section-title">The Gurukula <span class="gradient-text">Pedigree</span></h2>
+          <p class="section-subtitle">
+            Authentic Jyotish requires years of transmission, chart verification, and computational rigor under a living master.
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <!-- Credential 1 -->
+          <div class="module-card reveal-on-scroll" data-delay="100">
+            <span class="module-num">01</span>
+            <span class="module-tag">PARASARA CERTIFICATION</span>
+            <h3 class="module-title">7-Year Parasara Course (PJC)</h3>
+            <p class="module-desc">
+              Rigorous line-by-line Sanskrit translation and computational mastery of Brihat Parasara Hora Shastra under revered Guru Pt. Sanjay Rath. Certified in New Delhi, 2024.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> 16 Divisional Charts (Shodasavarga from D1 to D60)</li>
+              <li><span class="lesson-bullet">✦</span> Vimshottari, Narayana, and Chara Dasha timing systems</li>
+              <li><span class="lesson-bullet">✦</span> Classical remedial measures (Kavach, Yantra, Mantras)</li>
+            </ul>
+          </div>
+
+          <!-- Credential 2 -->
+          <div class="module-card reveal-on-scroll" data-delay="200">
+            <span class="module-num">02</span>
+            <span class="module-tag">INSTITUTIONAL RESIDENCY</span>
+            <h3 class="module-title">In-House Astrologer at Broome St. Temple</h3>
+            <p class="module-desc">
+              Served as resident astrologer at NYC's sacred Broome Street Temple (2022–2023), guiding hundreds of community members through life transitions and foundational study.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> 6-Week Vedic Astrology Core Immersion</li>
+              <li><span class="lesson-bullet">✦</span> Intensive Vedic Astrology Bootcamp cohorts</li>
+              <li><span class="lesson-bullet">✦</span> Community birth chart clinics & Q&A sessions</li>
+            </ul>
+          </div>
+
+          <!-- Credential 3 -->
+          <div class="module-card reveal-on-scroll" data-delay="300">
+            <span class="module-num">03</span>
+            <span class="module-tag">CULTURAL IMPACT</span>
+            <h3 class="module-title">Media & Global Client Collaborations</h3>
+            <p class="module-desc">
+              Consulted and profiled by international brands, television networks, and international diplomatic bodies for grounded astrological foresight.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> Bravo TV & Netflix Indian Matchmaking talent consultations</li>
+              <li><span class="lesson-bullet">✦</span> United Nations diplomatic wellness workshops</li>
+              <li><span class="lesson-bullet">✦</span> Anita Dongre, Fable & Mane, and Elle/Allure influencers</li>
+            </ul>
+          </div>
+
+          <!-- Credential 4 -->
+          <div class="module-card reveal-on-scroll" data-delay="400">
+            <span class="module-num">04</span>
+            <span class="module-tag">MODERN INNOVATION</span>
+            <h3 class="module-title">The Rishi AI Framework</h3>
+            <p class="module-desc">
+              Pioneered the translation of classical Vedic chart data into structured prompt schemas that allow LLMs (ChatGPT, Claude, Gemini) to analyze charts without hallucination.
+            </p>
+            <ul class="module-lessons">
+              <li><span class="lesson-bullet">✦</span> Elimination of generic sun-sign horoscope cliches</li>
+              <li><span class="lesson-bullet">✦</span> Formatted chart exports provided in every reading</li>
+              <li><span class="lesson-bullet">✦</span> Small-group cohorts teaching students to direct AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMMERSIVE QUOTE HORIZON -->
+    <section class="parallax-quote-section">
+      <div class="parallax-quote-bg" data-parallax-speed="-0.25"></div>
+      <div class="parallax-quote-overlay"></div>
+      <div class="parallax-floating-symbol sym-quote-1" data-parallax-speed="0.3" aria-hidden="true">✦</div>
+      <div class="parallax-floating-symbol sym-quote-3" data-parallax-speed="0.4" aria-hidden="true">☀️</div>
+
+      <div class="container parallax-quote-container">
+        <div class="parallax-quote-content is-revealed" data-parallax-speed="0.08">
+          <div class="parallax-symbol-header">
+            <span class="sacred-mantra">TRUTH · TIMING · AGENCY</span>
+          </div>
+          <blockquote class="parallax-blockquote">
+            “Your chart does not lock you into a fixed cage of fate. It is a navigational map of tides and currents. Knowing when to row and when to rest is the ultimate power.”
+          </blockquote>
+          <div class="parallax-quote-author">
+            <div class="author-avatar-gold">🏛️</div>
+            <div class="author-info-group">
+              <span class="author-name">Julie Taparia</span>
+              <span class="author-meta">New York City Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- READY TO CONNECT CTA BANNER -->
+    <section class="section-padding text-center">
+      <div class="container" style="max-width: 720px;">
+        <span class="section-eyebrow">WORK WITH JULIE</span>
+        <h2 class="section-title">Begin With Your <span class="gradient-text">True Blueprint</span></h2>
+        <p class="section-subtitle">
+          Book a 45-minute live consultation, get answers to a single burning question in 15 minutes, or reserve a seat in our upcoming live small-group cohort.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic">
+            <span>Schedule Reading on Calendly</span>
+          </a>
+          <a href="mailto:julietaparia@gmail.com?subject=Question%20for%20Julie" class="btn btn-glass">
+            <span>Email Julie Directly</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-brand-header">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 40 40" class="logo-yantra-svg">
+                <polygon points="20,2 38,36 2,36" fill="none" stroke="currentColor" stroke-width="2"/>
+                <polygon points="20,38 38,4 2,4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="footer-brand-title">THE ANCIENT BLUEPRINT</span>
+          </div>
+          <p class="footer-bio">
+            Bridging 5,000-year-old Vedic Jyotish with cutting-edge AI prompt intelligence. Julie Taparia provides deep personal clarity, life timing, and practical wisdom in New York City.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Julie Taparia</a></li>
+            <li><a href="readings.html">Readings & Consultations</a></li>
+            <li><a href="ai-jyotish.html">The Rishi AI Framework</a></li>
+            <li><a href="masterclass.html">Live Group Classes</a></li>
+            <li><a href="ebook.html">AI Prompts E-Book ($5)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-contact-list">
+            <li><a href="mailto:julietaparia@gmail.com" class="footer-contact-link"><span class="link-icon">✉️</span> julietaparia@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/julietaparia/" target="_blank" rel="noopener noreferrer" class="footer-contact-link"><span class="link-icon">📸</span> @julietaparia on Instagram</a></li>
+            <li><a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="footer-contact-link"><span class="link-icon">📅</span> Schedule on Calendly</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 The Ancient Blueprint · Julie Taparia · New York City.</p>
+        <p class="disclaimer">Vedic astrology provides guidance and spiritual insight. Clients hold ultimate agency for all personal choices.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
