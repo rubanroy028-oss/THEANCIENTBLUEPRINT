@@ -44,13 +44,13 @@
       </a>
 
       <!-- Desktop Navigation Menu -->
-      <nav class="nav-menu" id="navMenu">
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="readings.html" class="nav-link">Readings</a>
         <a href="ai-jyotish.html" class="nav-link active">AI Jyotish</a>
         <a href="masterclass.html" class="nav-link">Masterclasses</a>
-        <a href="ebook.html" class="nav-link">E-Book ($5)</a>
+        <a href="ebook.html" class="nav-link">AI E-Book <span class="nav-badge">$5</span></a>
       </nav>
 
       <!-- Header Controls -->
@@ -70,9 +70,12 @@
 
         <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic header-cta">
           <span>Book a Session</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow-icon" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 3.293a10 10 0 0 1 1.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
         </a>
 
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="bar bar-1"></span>
           <span class="bar bar-2"></span>
           <span class="bar bar-3"></span>
@@ -81,19 +84,29 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+
   <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer" id="mobileDrawer">
+  <div class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-label">Menu</span>
+    </div>
     <div class="mobile-drawer-content">
       <nav class="mobile-nav">
-        <a href="index.html" class="mobile-nav-link">Home</a>
-        <a href="about.html" class="mobile-nav-link">About</a>
-        <a href="readings.html" class="mobile-nav-link">Readings & Sessions</a>
-        <a href="ai-jyotish.html" class="mobile-nav-link active">AI Vedic Framework</a>
-        <a href="masterclass.html" class="mobile-nav-link">Live Masterclasses</a>
-        <a href="ebook.html" class="mobile-nav-link">E-Book ($5)</a>
+        <a href="index.html" class="mobile-nav-link"><span class="nav-num">01</span><span>Home</span></a>
+        <a href="about.html" class="mobile-nav-link"><span class="nav-num">02</span><span>About Julie</span></a>
+        <a href="readings.html" class="mobile-nav-link"><span class="nav-num">03</span><span>Readings & Sessions</span></a>
+        <a href="ai-jyotish.html" class="mobile-nav-link active"><span class="nav-num">04</span><span>AI Jyotish Framework</span></a>
+        <a href="masterclass.html" class="mobile-nav-link"><span class="nav-num">05</span><span>Live Masterclasses</span></a>
+        <a href="ebook.html" class="mobile-nav-link"><span class="nav-num">06</span><span>AI E-Book ($5)</span></a>
       </nav>
       <div class="mobile-drawer-footer">
-        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Book a Session</a>
+        <a href="https://calendly.com/julietaparia/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+          <span>Book a Session</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow-icon" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a10 10 0 0 1 1.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
+        <p class="mobile-contact-email">NYC & Worldwide · Parasara Vedic Astrology</p>
       </div>
     </div>
   </div>
